@@ -381,27 +381,6 @@ UPDATE creature_loot_template SET Chance = 100 WHERE item = 50320;
 UPDATE creature_loot_template SET Chance = 100 WHERE item = 49641;
 UPDATE creature_loot_template SET Reference = 0, Item = 51995 WHERE Reference = 50010 AND Item = 1;
 UPDATE reference_loot_template SET Item = 60000 WHERE Item = 50741;
-INSERT IGNORE INTO creature_loot_template (`Entry`,
-`Item`,
-`Reference`,
-`Chance`,
-`QuestRequired`,
-`LootMode`,
-`GroupId`,
-`MinCount`,
-`MaxCount`,
-`Comment`)
-VALUES
-(36296,
-50250,
-0,
-5,
-0,
-1,
-0,
-1,
-1,
-null);
 -- Set Valentine Event Quests for level 60
 UPDATE quest_template SET quest_template.QuestLevel = 60, quest_template.MinLevel = 55 WHERE LogTitle = "Something is in the Air (and it Ain't Love)";
 UPDATE quest_template SET quest_template.QuestLevel = 60, quest_template.MinLevel = 55 WHERE LogTitle = "You've Been Served";
