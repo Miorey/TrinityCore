@@ -1,6 +1,8 @@
 name: GCC
 
 on:
+  push:
+    branches: [ 3.3.5-MV ]
   pull_request:
     branches: [ 3.3.5-MV ]
 
